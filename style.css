@@ -1,0 +1,146 @@
+body, p {
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+.main-container {
+    padding: 30px 12px ;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.profile img {
+    width: 101px;
+    border-radius: 16px;
+}
+
+.profile-username {
+    margin-top: 10px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #4E5150;
+}
+
+.profile-location {
+    margin-top: 5px;
+
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #A9A9A9;
+}
+
+.profile-info {
+    margin-top: 12px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.posts,
+.followers {
+    margin-right: 12px;
+}
+.posts,
+.followers,
+.followings {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 78px;
+    height: 52px;
+
+    background: #E5E5E5;
+    border-radius: 12px;
+}
+.posts p:first-of-type,
+.followers p:first-of-type,
+.followings p:first-of-type {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    
+    color: #4E5150;
+}
+
+.posts p:last-of-type,
+.followers p:last-of-type,
+.followings p:last-of-type {
+    color: #BDBDBD;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.photos-grid {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.photos-grid div {
+    border-radius: 12px;
+}
+.photos-grid div img {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.171);
+    max-width: 100%;
+    max-height: 100%;
+
+    border-radius: 12px;
+}
+.photo1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.photo2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.photo3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.photo4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.photo5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.photo6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
