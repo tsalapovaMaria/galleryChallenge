@@ -90,7 +90,8 @@ body, p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-row-gap: 8px;
+    grid-column-gap: 12px;
 }
 .photos-grid div {
     border-radius: 12px;
@@ -143,4 +144,16 @@ body, p {
 
     grid-row-start: 3;
     grid-row-end: 4;
+}
+
+@media all and (min-width: 992px) {
+    .main-container {
+        padding: 60px 240px;
+    }
+    .photos-grid {
+        margin-top: 60px;
+    
+        grid-row-gap: 15px;
+        grid-column-gap: 18px;
+    }
 }
